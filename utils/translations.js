@@ -9,7 +9,7 @@ const translations = {
       findHospital: "Nearby hospitals:\n1. King Faisal Hospital\n2. CHUK\n3. Back",
       emergencyNumbers: "Emergency numbers:\nAmbulance: 912\nPolice: 112\n1. Back",
       schools: "Schools in Rwanda:\n1. Primary Schools\n2. Secondary Schools\n3. Back",
-      universities: "Universities in Rwanda:\n1. University of Rwanda\n2. AUCA\n3. Back",
+      univerPsities: "Universities in Rwanda:\n1. University of Rwanda\n2. AUCA\n3. Back",
       publicTransport: "Public transport options:\n1. Bus Services\n2. Moto Taxi\n3. Back",
       taxiServices: "Taxi services:\n1. Yego Cab\n2. Move Rwanda\n3. Back",
       invalidOption: "Invalid option. Please try again."
