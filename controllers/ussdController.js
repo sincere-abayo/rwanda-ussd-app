@@ -10,7 +10,17 @@ exports.handleUSSD = (req, res) => {
   } = req.body;
 
   // Process the USSD request
-  const result = menuHandler.handleMenu(sessionId, text, phoneNumber);
+  // For Africa's Talking, we need to get the latest input from the text
+  // The text format is like "1*2*1" where each number is a menu selection
+  let userInput = '';
+  
+  if (text) {
+    // If there's text input, get the most recent selection
+    const textArray = text.split('*');
+    userInput = textArray[textArray.length - 1];
+  }
+
+  const result = menuHandler.handleMenu(sessionId, userInput, phoneNumber);
 
   // Format the response as expected by Africa's Talking
   let response = '';
