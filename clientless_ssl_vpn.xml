@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EDRAW>
+  <Diagram>
+    <Shapes>
+      <!-- User -->
+      <Shape ID="1" Text="User (Web Browser)" X="100" Y="100" Width="120" Height="50" Type="Rectangle" FillColor="#D9EAD3"/>
+      
+      <!-- Internet -->
+      <Shape ID="2" Text="Internet (HTTPS)" X="250" Y="100" Width="120" Height="50" Type="Cloud" FillColor="#CFE2F3"/>
+      
+      <!-- Cisco ASA -->
+      <Shape ID="3" Text="Cisco ASA" X="400" Y="100" Width="100" Height="50" Type="Rectangle" FillColor="#F4CCCC"/>
+
+      <!-- Internal Resources -->
+      <Shape ID="4" Text="Web Server" X="550" Y="60" Width="100" Height="40" Type="Rectangle" FillColor="#FFF2CC"/>
+      <Shape ID="5" Text="Email Server" X="550" Y="110" Width="100" Height="40" Type="Rectangle" FillColor="#FFF2CC"/>
+      <Shape ID="6" Text="App Server" X="550" Y="160" Width="100" Height="40" Type="Rectangle" FillColor="#FFF2CC"/>
+
+      <!-- Authentication arrow -->
+      <Connector ID="7" From="1" To="2" Text="Authentication" LineColor="#6AA84F"/>
+      <Connector ID="8" From="2" To="3" Text="" LineColor="#6AA84F"/>
+
+      <!-- Authorization arrow -->
+      <Connector ID="9" From="3" To="3" Text="Group Policy and ACLs" LineColor="#E69138"/>
+
+      <!-- Access arrows -->
+      <Connector ID="10" From="3" To="4" Text="HTTPS Access" LineColor="#3C78D8"/>
+      <Connector ID="11" From="3" To="5" Text="HTTPS Access" LineColor="#3C78D8"/>
+      <Connector ID="12" From="3" To="6" Text="HTTPS Access" LineColor="#3C78D8"/>
+    </Shapes>
+  </Diagram>
+</EDRAW>
