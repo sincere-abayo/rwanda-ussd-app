@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: rwanda-ussd-app
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: AFRICAS_TALKING_API_KEY
+        sync: false
+      - key: AFRICAS_TALKING_USERNAME
+        sync: false
